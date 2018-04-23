@@ -1,0 +1,26 @@
+﻿<dxb:BarSplitButtonItem xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+                    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+                    xmlns:local="clr-namespace:OpenedWindows"
+                    x:Class="OpenedWindows.BarWindowsButtonItem"
+                    ActAsDropDown="True"
+                    Content="Opened Windows" DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <dxb:BarSplitButtonItem.Resources>
+        <local:DocumentsConverter x:Key="documentsConverter" />
+    </dxb:BarSplitButtonItem.Resources>
+    <dxb:BarSplitButtonItem.PopupControl>
+        <dxb:PopupControlContainerInfo Opening="onPopupOpening">
+            <dxe:ListBoxEdit Name="lbPopup" SelectionMode="Single" SelectedItem="{Binding DockManager.ActiveDockItem}" ItemsSource="{Binding DockManager, Converter={StaticResource documentsConverter}}" SelectedIndexChanged="onSelectedWindowChanged">
+                <dxe:ListBoxEdit.StyleSettings>
+                    <dxe:RadioListBoxEditStyleSettings />
+                </dxe:ListBoxEdit.StyleSettings>
+                <dxe:ListBoxEdit.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding ActualCaption}" />
+                    </DataTemplate>
+                </dxe:ListBoxEdit.ItemTemplate>
+            </dxe:ListBoxEdit>
+        </dxb:PopupControlContainerInfo>
+    </dxb:BarSplitButtonItem.PopupControl>
+</dxb:BarSplitButtonItem>
