@@ -1,4 +1,4 @@
-﻿<dxb:BarSplitButtonItem xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<dxb:BarSplitButtonItem xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
                     xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
