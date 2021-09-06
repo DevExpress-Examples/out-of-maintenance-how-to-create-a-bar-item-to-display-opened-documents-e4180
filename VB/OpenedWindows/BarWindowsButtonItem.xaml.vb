@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Windows
@@ -10,6 +9,7 @@ Imports DevExpress.Xpf.Bars
 Namespace OpenedWindows
 	Partial Public Class BarWindowsButtonItem
 		Inherits BarSplitButtonItem
+
 		Public Shared ReadOnly DockManagerProperty As DependencyProperty = DependencyProperty.Register("DockManager", GetType(DockLayoutManager), GetType(BarWindowsButtonItem), New PropertyMetadata(Nothing))
 
 		Public Property DockManager() As DockLayoutManager
