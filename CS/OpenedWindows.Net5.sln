@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenedWindows", "OpenedWindows\OpenedWindows.csproj", "{8DE3D5D0-6D38-4683-A830-632290A06177}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenedWindows", "OpenedWindows\OpenedWindows.Net5.csproj", "{8DE3D5D0-6D38-4683-A830-632290A06177}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
